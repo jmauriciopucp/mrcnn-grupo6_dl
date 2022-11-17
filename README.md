@@ -31,13 +31,15 @@
  
     $ python setup.py install
     $ pip install git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI
-    
+ ## Dataset D2S  
  En la carpeta **dataset** se encuentran 4 carpetas con las imágenes y anotaciones de [MVTEC D2S](https://www.mvtec.com/company/research/datasets/mvtec-d2s):
  
  - **/train**: En esta carpeta se encuentran las 4380 imágenes para el entrenamiento de D2S.
  - **/val**: En esta carpeta se encuentran las 3600 imágenes para la validación de D2S.
  - **/test**: En esta carpeta se encuentran 30 imágenes para el test del modelo, tomadas como imágenes a ser inferidas por el modelo.
  - **/annotations**: En esta carpeta se encuentran las anotaciones para las imágenes del modelo, donde se tienen los archivos instances_train.json y instances_val.json .
+ ## Experimentación con Mask R-CNN
+
  En la raíz de este repositorio tenemos los notebooks **training_model.ipynb** y **detection_model.py**, donde realizamos la experimentación del modelo Mask R-CNN para la segementación de instancias de las imágenes del dataset D2S, imágenes tomadas desde un ángulo superior con la intención que el modelo sea una herramienta para detección del número de productos y clase del producto en un cajero de supermercado, acelerando el procedimiento de compra de un producto.
  
  Muchas gracias.
