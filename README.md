@@ -12,12 +12,13 @@
  2. Crearemos nuestro kernel con nombre **maskrcnn**.
  3. Instalaremos la versión 2.1.0 de Tensorflow, utilizaremos la distribución de 'pip' para este propósito.
  4. Instalaremos la versión 2.1.0 de Tensorflow GPU y 10.1 del toolkit de CUDA(para propósitos de utilizar los controladores de NVIDIA). Utilizaremos la distribución de conda por ser más estable para este propósito.
- 5. Instalaremos algunas dependencias adicionales detalladas en el cuadro de comandos de abajo.
+ 
+ Instalaremos algunas dependencias adicionales detalladas en el cuadro de comandos de abajo.
  
     $ conda create -n MaskRCNN anaconda python=3.7.7
     $ conda activate MaskRCNN
     $ conda install ipykernel
-    $ python -m ipykernel install --user --name maskrcnn --display-name "maskrcnn"
+    $ python -m ipykernel install --user --name MaskRCNN --display-name "MaskRCNN"
     $ conda install tensorflow-gpu==2.1.0 cudatoolkit=10.1
     $ pip install tensorflow==2.1.0
     $ pip install jupyter
