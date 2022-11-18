@@ -5,6 +5,14 @@
     
  - [Matterport, Inc](https://github.com/matterport/Mask_RCNN) - Construido bajo la versión 1.x de Tensorflow.
  - [Adam Kelly](https://github.com/akTwelve/Mask_RCNN) - Construido bajo la versión 2.x de Tensorflow.
+
+ ## Configuración de VM para deeplearning
+ Debido a que en Google Colab no se contó con los recursos suficientes para entrenar el modelo Mask RCNN se creó una máquina virtual en Google Cloud Platform con las siguientes caracteristicas:
+
+ - 30 GB de RAM
+ - 8 vCPU
+ - 1 GPU NVIDIA T4
+ - 300 GB de Disco
  
  ## Configuración de ambiente
  Se deben seguir los siguientes pasos para configurar el ambiente de nuestro proyecto.
@@ -40,6 +48,7 @@
  - **/annotations**: En esta carpeta se encuentran las anotaciones para las imágenes del modelo, donde se tienen los archivos instances_train.json y instances_val.json .
  ## Experimentación con Mask R-CNN
 
+<<<<<<< Updated upstream
  En la raíz de este repositorio se tiene los notebooks **training_model.ipynb** y **detection_model.py**, donde se realiza la experimentación del modelo Mask R-CNN para la segementación de instancias de las imágenes del dataset D2S, imágenes tomadas desde un ángulo superior con la intención que el modelo sea una herramienta para la detección del número de productos y clase del producto en un cajero de supermercado, acelerando el procedimiento de compra de un producto.
  
  ### Entrenamiento del modelo
@@ -77,3 +86,13 @@ Seguidamente, se graficó a mano alzada el polígono de cada imagen.
  
  
  
+=======
+ En la raíz de este repositorio tenemos los notebooks **training_model.ipynb** y **detection_model.py**, donde realizamos la experimentación del modelo Mask R-CNN para la segementación de instancias de las imágenes del dataset D2S, imágenes tomadas desde un ángulo superior con la intención que el modelo sea una herramienta para detección del número de productos y clase del producto en un cajero de supermercado, acelerando el procedimiento de compra de un producto.
+
+ ![MASK-RCNN](https://github.com/jmauriciopucp/mrcnn-grupo6_dl/recursos/imagenes/mask-rcnn.PNG?raw=true)
+
+## Documentación de Experimentación
+ Los notebooks fueron documentados usando el idioma español. El código fuente de Mask RCNN de **model.py** fue comentado para detallar los pasos más importantes del algoritmo. Los comentarios fueron escritos en español y se pueden encontrar como "Comentarios del G6", haciendo alución al Grupo 6. 
+
+ Muchas gracias.
+>>>>>>> Stashed changes
