@@ -6,7 +6,7 @@
  - [Matterport, Inc](https://github.com/matterport/Mask_RCNN) - Construido bajo la versión 1.x de Tensorflow.
  - [Adam Kelly](https://github.com/akTwelve/Mask_RCNN) - Construido bajo la versión 2.x de Tensorflow.
 
- ## Configuración de VM para deeplearning
+ ## Configuración de VM para DeepLearning
  Debido a que en Google Colab no se contó con los recursos suficientes para entrenar el modelo Mask RCNN se creó una máquina virtual en Google Cloud Platform con las siguientes caracteristicas:
 
  - 30 GB de RAM
@@ -48,9 +48,12 @@
  - **/annotations**: En esta carpeta se encuentran las anotaciones para las imágenes del modelo, donde se tienen los archivos instances_train.json y instances_val.json .
  ## Experimentación con Mask R-CNN
 
-<<<<<<< Updated upstream
- En la raíz de este repositorio se tiene los notebooks **training_model.ipynb** y **detection_model.py**, donde se realiza la experimentación del modelo Mask R-CNN para la segementación de instancias de las imágenes del dataset D2S, imágenes tomadas desde un ángulo superior con la intención que el modelo sea una herramienta para la detección del número de productos y clase del producto en un cajero de supermercado, acelerando el procedimiento de compra de un producto.
- 
+ En la raíz de este repositorio se tiene los notebooks **training_model.ipynb** y **detection_model.py**, donde se realiza la experimentación del modelo Mask R-CNN (**ver imagen**) para la segementación de instancias de las imágenes del dataset D2S, imágenes tomadas desde un ángulo superior con la intención que el modelo sea una herramienta para la detección del número de productos y clase del producto en un cajero de supermercado, acelerando el procedimiento de compra de un producto.
+<p style="text-align:center;">
+<img alt="mask-rcnn" src="https://user-images.githubusercontent.com/13455427/202597302-822b5d7c-5d9d-439d-b4f0-78d59e5ac8dd.PNG" width="434" height="200">
+</p>
+
+
  ### Entrenamiento del modelo
  
  Para el entrenamiento de la red, se utilizó como base los pesos por defecto del modelo COCO y se buscó entrenar solo la última capa debido a restricciones de tiempo y memoria de los recursos utilizados. La red fue entrenada durante 40 épocas.
@@ -81,18 +84,17 @@ Seguidamente, se graficó a mano alzada el polígono de cada imagen.
 ![imagen 2](https://user-images.githubusercontent.com/107210601/202594548-eb9e36f9-6ffe-44e6-a174-7587da5e4f1e.png)
 
 
-
-
- 
- 
- 
-=======
- En la raíz de este repositorio tenemos los notebooks **training_model.ipynb** y **detection_model.py**, donde realizamos la experimentación del modelo Mask R-CNN para la segementación de instancias de las imágenes del dataset D2S, imágenes tomadas desde un ángulo superior con la intención que el modelo sea una herramienta para detección del número de productos y clase del producto en un cajero de supermercado, acelerando el procedimiento de compra de un producto.
-
- ![MASK-RCNN](https://github.com/jmauriciopucp/mrcnn-grupo6_dl/recursos/imagenes/mask-rcnn.PNG?raw=true)
-
 ## Documentación de Experimentación
- Los notebooks fueron documentados usando el idioma español. El código fuente de Mask RCNN de **model.py** fue comentado para detallar los pasos más importantes del algoritmo. Los comentarios fueron escritos en español y se pueden encontrar como "Comentarios del G6", haciendo alución al Grupo 6. 
+ Los notebooks fueron documentados usando el idioma español. El código fuente de Mask RCNN de **model.py** fue comentado para detallar los pasos (ver imagen) más importantes del algoritmo. Los comentarios fueron escritos en español y se pueden encontrar como:
+ 
+        ############################################################
+        ## Comentarios del G6:
+        ############################################################
 
- Muchas gracias.
->>>>>>> Stashed changes
+<p style="text-align:center;">
+<img src="https://user-images.githubusercontent.com/13455427/202596322-5d7c5b3d-8296-4325-ae00-893b47fc5664.PNG" data-canonical-src="https://user-images.githubusercontent.com/13455427/202596322-5d7c5b3d-8296-4325-ae00-893b47fc5664.PNG" width="250" height="200" />
+</p>
+
+ 
+ 
+ 
