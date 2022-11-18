@@ -8,12 +8,12 @@
  
  ## Configuración de ambiente
  Se deben seguir los siguientes pasos para configurar el ambiente de nuestro proyecto.
- 1. Crearemos nuestro entorno virtual utilizando la distribución de Anaconda, configurando la versión 3.7.7 de Python.
- 2. Crearemos nuestro kernel con nombre **maskrcnn**.
- 3. Instalaremos la versión 2.1.0 de Tensorflow, utilizaremos la distribución de 'pip' para este propósito.
- 4. Instalaremos la versión 2.1.0 de Tensorflow GPU y 10.1 del toolkit de CUDA(para propósitos de utilizar los controladores de NVIDIA). Utilizaremos la distribución de conda por ser más estable para este propósito.
+ 1. Crear un entorno virtual utilizando la distribución de Anaconda, configurando la versión 3.7.7 de Python.
+ 2. Crear un kernel con nombre **maskrcnn**.
+ 3. Instalar la versión 2.1.0 de Tensorflow, utilizar la distribución de 'pip' para este propósito.
+ 4. Instalar la versión 2.1.0 de Tensorflow GPU y 10.1 del toolkit de CUDA(para propósitos de utilizar los controladores de NVIDIA). Utilizar la distribución de conda por ser más estable para este propósito.
  
- Instalaremos algunas dependencias adicionales detalladas en el cuadro de comandos de abajo.
+ Instalar algunas dependencias adicionales detalladas en el cuadro de comandos de abajo.
  
     $ conda create -n MaskRCNN anaconda python=3.7.7
     $ conda activate MaskRCNN
@@ -40,6 +40,26 @@
  - **/annotations**: En esta carpeta se encuentran las anotaciones para las imágenes del modelo, donde se tienen los archivos instances_train.json y instances_val.json .
  ## Experimentación con Mask R-CNN
 
- En la raíz de este repositorio tenemos los notebooks **training_model.ipynb** y **detection_model.py**, donde realizamos la experimentación del modelo Mask R-CNN para la segementación de instancias de las imágenes del dataset D2S, imágenes tomadas desde un ángulo superior con la intención que el modelo sea una herramienta para detección del número de productos y clase del producto en un cajero de supermercado, acelerando el procedimiento de compra de un producto.
+ En la raíz de este repositorio se tiene los notebooks **training_model.ipynb** y **detection_model.py**, donde se realiza la experimentación del modelo Mask R-CNN para la segementación de instancias de las imágenes del dataset D2S, imágenes tomadas desde un ángulo superior con la intención que el modelo sea una herramienta para la detección del número de productos y clase del producto en un cajero de supermercado, acelerando el procedimiento de compra de un producto.
  
- Muchas gracias.
+ ### Entrenamiento del modelo
+ 
+ Para el entrenamiento de la red, se utilizó como base los pesos por defecto del modelo COCO y se buscó entrenar solo la última capa debido a restricciones de tiempo y memoria de los recursos utilizados. La red fue entrenada durante 40 épocas.
+ 
+ ### Evaluación del modelo
+ 
+ Se consideró el mAP como métrica de calidad del modelo y se utilizó Tensorboard 1.15.0 para visualizar el comportamiento de los *loss* del modelo. En la siguiente imagen se visualiza algunos de estos gráficos
+ 
+ ![imagen1](https://user-images.githubusercontent.com/107210601/202592124-de7aa507-6d8a-4359-8cf7-870b6774bcb7.png)
+
+### Detección de objetos
+
+
+### Aplicación del modelo entrenado
+
+
+
+
+ 
+ 
+ 
