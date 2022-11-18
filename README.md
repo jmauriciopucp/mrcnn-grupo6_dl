@@ -69,7 +69,7 @@ Seguidamente, se graficó a mano alzada el polígono de cada imagen.
 
 ![image](https://user-images.githubusercontent.com/107210601/202593727-426d85ee-c5e8-4160-b4e4-b85c20993616.png)
 
-![image](https://user-images.githubusercontent.com/107210601/202593766-041fc4f1-a3a2-4f8e-91fa-86f5378b2e07.png)
+![imagen 2](https://user-images.githubusercontent.com/107210601/202594548-eb9e36f9-6ffe-44e6-a174-7587da5e4f1e.png)
 
 
 
