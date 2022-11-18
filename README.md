@@ -54,8 +54,22 @@
 
 ### Detección de objetos
 
+Se aplicó el modelo entrenado sobre la data de validación. A continuación se muestra la detección de objetos sobre una de estas imágenes.
+
+![image](https://user-images.githubusercontent.com/107210601/202592606-248a783a-8f47-4a28-88c2-32d1ffbc53dd.png)
 
 ### Aplicación del modelo entrenado
+
+El dataset D2S no provee las anotaciones que corresponden al conjunto de datos de testing. Por lo tanto, el grupo realizó la anotación manual de 30 imágenes utilizando la herramienta *VGG Image Annotator* disponible en http://www.robots.ox.ac.uk/~vgg/software/via/via-1.0.0.html.
+
+Para realizar las anotaciones, se consultó la página https://universe.roboflow.com/nitt-vykgx/d2s-actual-split/browse?queryText=&pageSize=50&startingIndex=0&browseQuery=true que ayudó a identificar las clases de los objetos 
+![image](https://user-images.githubusercontent.com/107210601/202593902-f03592e7-9827-47cf-bbc2-bbbbd974cae5.png)
+
+Seguidamente, se graficó a mano alzada el polígono de cada imagen.
+
+![image](https://user-images.githubusercontent.com/107210601/202593727-426d85ee-c5e8-4160-b4e4-b85c20993616.png)
+
+![image](https://user-images.githubusercontent.com/107210601/202593766-041fc4f1-a3a2-4f8e-91fa-86f5378b2e07.png)
 
 
 
