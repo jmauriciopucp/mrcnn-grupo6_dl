@@ -49,8 +49,8 @@
  ## Experimentación con Mask R-CNN
 
  En la raíz de este repositorio se tiene los notebooks **training_model.ipynb** y **detection_model.py**, donde se realiza la experimentación del modelo Mask R-CNN (**ver imagen**) para la segementación de instancias de las imágenes del dataset D2S, imágenes tomadas desde un ángulo superior con la intención que el modelo sea una herramienta para la detección del número de productos y clase del producto en un cajero de supermercado, acelerando el procedimiento de compra de un producto.
-<p style="text-align:center;">
-<img alt="mask-rcnn" src="https://user-images.githubusercontent.com/13455427/202597302-822b5d7c-5d9d-439d-b4f0-78d59e5ac8dd.PNG" width="434" height="200">
+<p align="center">
+<img alt="mask-rcnn" src="https://user-images.githubusercontent.com/13455427/202597302-822b5d7c-5d9d-439d-b4f0-78d59e5ac8dd.PNG" width="534" height="240">
 </p>
 
 
@@ -91,8 +91,8 @@ Seguidamente, se graficó a mano alzada el polígono de cada imagen.
         ## Comentarios del G6:
         ############################################################
 
-<p style="text-align:center;">
-<img src="https://user-images.githubusercontent.com/13455427/202596322-5d7c5b3d-8296-4325-ae00-893b47fc5664.PNG" data-canonical-src="https://user-images.githubusercontent.com/13455427/202596322-5d7c5b3d-8296-4325-ae00-893b47fc5664.PNG" width="250" height="200" />
+<p align="center">
+<img src="https://user-images.githubusercontent.com/13455427/202596322-5d7c5b3d-8296-4325-ae00-893b47fc5664.PNG" data-canonical-src="https://user-images.githubusercontent.com/13455427/202596322-5d7c5b3d-8296-4325-ae00-893b47fc5664.PNG" width="280" height="230" />
 </p>
 
  
