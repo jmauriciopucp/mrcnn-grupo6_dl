@@ -111,9 +111,9 @@ class CustomDataset(utils.Dataset):
         """
         
         #Cargando todas las clases
-        coco = COCO("{}/annotations/instances_{}{}.json".format(dataset_dir, "val", "2014"))
+        coco = COCO("{}/annotations/instances_{}{}.json".format(dataset_dir, "train", "2014"))
         for i in sorted(coco.getCatIds()):
-            self.add_class("objetos", i, coco.loadCats(i)[0]["name"])
+            self.add_class("Objetos", i, coco.loadCats(i)[0]["name"])
         
         # Add classes. We have only one class to add.
         #self.add_class("object", 1, "RBC")
@@ -158,7 +158,7 @@ class CustomDataset(utils.Dataset):
             # shape_attributes (see json format above)
           
             polygons = [r['shape_attributes'] for r in a['regions'].values()]
-            objects = [s['region_attributes']['objetos'] for s in a['regions'].values()]
+            objects = [s['region_attributes']['Objetos'] for s in a['regions'].values()]
 
             #name_dict = {"RBC": 1,"WBC": 2}
                 
